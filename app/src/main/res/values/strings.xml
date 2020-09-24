@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Renta User</string>
+    <string name="about">О программе</string>
+    <string name="list">Список</string>
+</resources>
