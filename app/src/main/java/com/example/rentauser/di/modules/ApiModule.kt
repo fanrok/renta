@@ -58,6 +58,6 @@ class ApiModule {
     }
 
     companion object {
-        private const val BASE_URL = "https://contact.taxsee.com/"
+        private const val BASE_URL = "https://reqres.in/"
     }
 }

@@ -2,8 +2,12 @@ package com.example.rentauser.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.rentauser.R
 import com.example.rentauser.di.components.ViewModelComponent
 import com.example.rentauser.ui.base.BaseFragment
@@ -29,5 +33,4 @@ class AboutFragment : BaseFragment() {
 
         return view
     }
-
 }

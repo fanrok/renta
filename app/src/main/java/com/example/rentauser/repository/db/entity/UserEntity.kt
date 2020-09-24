@@ -15,11 +15,19 @@ data class UserEntity(
     @PrimaryKey
     val id: Int,
 
-    @SerializedName("login")
+    @SerializedName("email")
     @Expose
-    var login: String? = null,
+    var email: String? = null,
 
-    @SerializedName("pass")
+    @SerializedName("first_name")
     @Expose
-    val pass: String? = null
+    val firstName: String? = null,
+
+    @SerializedName("last_name")
+    @Expose
+    val lastName: String? = null,
+
+    @SerializedName("avatar")
+    @Expose
+    val avatar: String? = null
 )

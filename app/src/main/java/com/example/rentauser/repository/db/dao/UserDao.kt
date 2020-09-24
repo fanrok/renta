@@ -9,12 +9,20 @@ import io.reactivex.Single
  */
 @Dao
 interface UserDao {
+    @Query("SELECT * FROM users")
+    fun getAll(): Single<List<UserEntity>>
 
     @Query("SELECT * FROM users WHERE id = :id")
     fun getById(id: Int): Single<UserEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(userEntity: UserEntity): Single<Long>
+    fun insertList(list: List<UserEntity>): Single<List<Long>>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun update(userEntity: UserEntity)
+
+    @Update
+    fun updateAll(list: List<UserEntity>)
 
     @Delete
     fun delete(userEntity: UserEntity)

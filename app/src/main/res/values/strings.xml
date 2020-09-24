@@ -2,4 +2,5 @@
     <string name="app_name">Renta User</string>
     <string name="about">О программе</string>
     <string name="list">Список</string>
+    <string name="about_text">Тестовое задание для Rentateam</string>
 </resources>
