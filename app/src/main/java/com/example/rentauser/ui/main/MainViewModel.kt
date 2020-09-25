@@ -37,7 +37,6 @@ class MainViewModel (application: Application, private val repository: AppReposi
         private fun loadAllUsersFromNetwork() {
                 dispose.add(
                         repository.getAllUsersFromNetwork()
-                                .retry()
                                 .subscribeOn(Schedulers.io())
                                 .observeOn(AndroidSchedulers.mainThread())
                                 .subscribe({ it ->
