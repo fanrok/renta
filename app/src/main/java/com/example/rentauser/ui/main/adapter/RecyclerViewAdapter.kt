@@ -72,7 +72,8 @@ class RecyclerViewAdapter : BaseAdapter<RecyclerView.ViewHolder>() {
             clItem.setOnClickListener {
                 onItemClick?.invoke(user.id)
             }
-            name.text = user.firstName
+            val fullName = "${user.firstName} ${user.lastName}"
+            name.text = fullName
         }
     }
 
