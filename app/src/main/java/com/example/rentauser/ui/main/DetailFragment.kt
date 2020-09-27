@@ -51,7 +51,7 @@ class DetailFragment  : BaseFragment() {
             .override(200, 200)
             .centerCrop()
             .into(iv_logo)
-        val fullName = "${user.firstName} ${user.lastName}"
+        val fullName = "${user.lastName} ${user.firstName}"
         et_name.text = fullName
         tv_email.text = user.email
     }
