@@ -2,35 +2,20 @@ package com.example.rentauser.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.NavHostFragment.findNavController
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.Fragment
 import com.example.rentauser.R
-import com.example.rentauser.di.components.ViewModelComponent
-import com.example.rentauser.ui.base.BaseFragment
-import javax.inject.Inject
 
 /**
  * Created by Dmitriy Larin
  */
-class AboutFragment : BaseFragment() {
-    @Inject
-    lateinit var viewModel: MainViewModel
-
-    override fun injectDependency(component: ViewModelComponent) {
-        component.inject(this)
-    }
+class AboutFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.about_fragment, container, false)
-
-
-        return view
+        return inflater.inflate(R.layout.about_fragment, container, false)
     }
 }

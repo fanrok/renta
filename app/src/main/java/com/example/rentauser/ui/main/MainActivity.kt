@@ -25,12 +25,13 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.action_list -> {
                     findNavController(R.id.nav_host_fragment).navigate(R.id.listFragment)
+
                 }
                 R.id.action_about -> {
                     findNavController(R.id.nav_host_fragment).navigate(R.id.aboutFragment)
                 }
             }
-            false
+            true
         }
     }
 }
